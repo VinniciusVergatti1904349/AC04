@@ -3,7 +3,6 @@ from flask import Flask, jsonify, request
 from math import sqrt
 
 app = Flask(__name__)
-
 @app.route('/')
 def fibo():
     px = 1
@@ -11,7 +10,7 @@ def fibo():
     lim = 50
     found = 0
     res = "0,"
-    while (found < limite):
+    while (found < lim):
         tmp = px
         px += ant
         ant = tmp
